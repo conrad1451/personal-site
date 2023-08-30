@@ -9,17 +9,17 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Naol Wordoffa',
-  domain: 'naolwordoffa.me',
-  author: 'Naol Wordoffa',
+  name: 'Conrad Hansen-Quartey',
+  domain: 'https://conradhq.vercel.app/',
+  author: 'Conrad Hansen-Quartey',
 
   // open graph metadata (optional)
   description: 'My Personal Site',
 
   // social usernames (optional)
   //twitter: '#',
-  github: 'nwordoffa3',
-  linkedin: 'naol-wordoffa-61500b221',
+  github: 'conrad1451',
+  linkedin: 'conrad-hansen-quartey',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
