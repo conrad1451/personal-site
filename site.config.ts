@@ -2,7 +2,7 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '16a62417b9364b86b30676837d4f097a', // conrad school acct 
+  rootNotionPageId: '16a62417b9364b86b30676837d4f097a', // conrad school acct     
   
 
   // if you want to restrict pages to a single notion workspace (optional)
