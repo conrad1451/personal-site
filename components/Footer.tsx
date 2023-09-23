@@ -111,7 +111,7 @@ export const FooterImpl: React.FC = () => {
         )}
         <a href="https://drive.google.com/file/d/1966dZX4w8KF84IpvKdBds5ILVYiu3N-k/view?usp=sharing" 
           className={styles.readme}>
-          <FaReadme/>
+          <FaZhihu/>
         </a>
         {config.linkedin && (
           <a
