@@ -11,11 +11,11 @@ import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 
-// import { IoSunnyOutline } from '@react-icons/all-files/gr/GrArchive'
-// import { IoSunnyOutline } from '@react-icons/all-files/gr/GrArchlinux'
-// import { IoSunnyOutline } from '@react-icons/all-files/gr/GrCaretUp'
-// import { IoSunnyOutline } from '@react-icons/all-files/gr/GrCode'
-import { IoSunnyOutline } from '@react-icons/all-files/gr/GrDeploy'
+// import { GrArchive } from '@react-icons/all-files/gr/GrArchive'
+// import { GrArchlinux } from '@react-icons/all-files/gr/GrArchlinux'
+// import { GrCaretUp } from '@react-icons/all-files/gr/GrCaretUp'
+// import { GrCode } from '@react-icons/all-files/gr/GrCode'
+import { GrDeploy } from '@react-icons/all-files/gr/GrDeploy'
 
 
 
