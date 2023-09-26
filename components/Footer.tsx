@@ -11,6 +11,17 @@ import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 
+// import { IoSunnyOutline } from '@react-icons/all-files/gr/GrArchive'
+// import { IoSunnyOutline } from '@react-icons/all-files/gr/GrArchlinux'
+// import { IoSunnyOutline } from '@react-icons/all-files/gr/GrCaretUp'
+// import { IoSunnyOutline } from '@react-icons/all-files/gr/GrCode'
+import { IoSunnyOutline } from '@react-icons/all-files/gr/GrDeploy'
+
+
+
+
+
+
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
@@ -94,7 +105,7 @@ export const FooterImpl: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaZhihu />
+            <GrDeploy />
           </a>
         )}
 
