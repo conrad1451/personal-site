@@ -6,10 +6,21 @@ import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
-import { FaReadme } from '@react-icons/all-files/fa/FaReadme'
-import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
+// import { FaReadme } from '@react-icons/all-files/fa/FaReadme'
+// import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
+
+// import { GrArchive } from '@react-icons/all-files/gr/GrArchive'
+// import { GrArchlinux } from '@react-icons/all-files/gr/GrArchlinux'
+// import { GrCaretUp } from '@react-icons/all-files/gr/GrCaretUp'
+// import { GrCode } from '@react-icons/all-files/gr/GrCode'
+import { GrDeploy } from '@react-icons/all-files/gr/GrDeploy'
+
+
+
+
+
 
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
@@ -94,7 +105,7 @@ export const FooterImpl: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaZhihu />
+            <GrDeploy />
           </a>
         )}
 
@@ -111,7 +122,7 @@ export const FooterImpl: React.FC = () => {
         )}
         <a href="https://drive.google.com/file/d/1966dZX4w8KF84IpvKdBds5ILVYiu3N-k/view?usp=sharing" 
           className={styles.readme}>
-          <FaReadme/>
+          <GrDeploy/>
         </a>
         {config.linkedin && (
           <a
