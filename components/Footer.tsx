@@ -120,7 +120,9 @@ export const FooterImpl: React.FC = () => {
             <FaGithub />
           </a>
         )}
-        <a href="https://conradhq-three-js.vercel.app/" 
+        <a 
+          href={`https://conradhq-three-js.vercel.app/`} 
+          title={`Leveled-up Portfolio`}
           className={styles.readme}>
           <GrDeploy/>
         </a>
