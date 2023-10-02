@@ -2,6 +2,8 @@
 
 This is the history branch. It stores important lessons from failed branches that have been deleted. How so? For failed branches which contain an important lesson, I will create a pull request for those branches to this branch. Then, I will cancel the pull request and include comments explaining why the failure occured and the important lesson to take away. Afterwards, I can delete the failed branch. If there is ever any point in the future in which I need to resurrect the branch, I can do so through the canceled pull request history of this history branch.
 
+Source for idea: [medium article](https://medium.com/@vbabak/how-to-deal-with-stale-branches-on-the-github-b49727480872)
+
 Below is the ReadMe text for the repository:
 ------------------------------------------------------------------------
 
