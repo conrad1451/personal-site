@@ -15,7 +15,7 @@ import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 // import { GrArchlinux } from '@react-icons/all-files/gr/GrArchlinux'
 // import { GrCaretUp } from '@react-icons/all-files/gr/GrCaretUp'
 // import { GrCode } from '@react-icons/all-files/gr/GrCode'
-import { GrDeploy } from '@react-icons/all-files/gr/GrDeploy'  
+import { GrDeploy } from '@react-icons/all-files/gr/GrDeploy'
 
 
 
