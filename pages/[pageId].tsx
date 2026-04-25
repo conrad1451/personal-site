@@ -7,6 +7,8 @@ import { getSiteMap } from '@/lib/get-site-map'
 import { resolveNotionPage } from '@/lib/resolve-notion-page'
 import { PageProps, Params } from '@/lib/types'
 
+// CHQ: Adding a comment to trigger the workflow
+
 export const getStaticProps: GetStaticProps<PageProps, Params> = async (
   context
 ) => {

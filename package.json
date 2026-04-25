@@ -37,7 +37,7 @@
     "got": "^12.5.3",
     "isomorphic-unfetch": "^4.0.2",
     "lqip-modern": "^2.0.0",
-    "next": "^13.1.6",
+    "next": "14.2.35",
     "node.js": "^0.0.1-security",
     "notion-client": "^6.15.6",
     "notion-types": "^6.15.6",
