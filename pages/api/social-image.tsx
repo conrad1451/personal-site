@@ -14,9 +14,13 @@ const interBoldFontP = fetch(
   new URL('../../public/fonts/Inter-SemiBold.ttf', import.meta.url)
 ).then((res) => res.arrayBuffer())
 
+// export const config = {
+//   runtime: 'experimental-edge'
+// }
 export const config = {
-  runtime: 'experimental-edge'
+  runtime: 'nodejs'
 }
+
 
 export default async function OGImage(req: NextRequest) {
   const { searchParams } = new URL(req.url)
