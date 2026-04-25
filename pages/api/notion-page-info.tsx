@@ -34,7 +34,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     throw new Error('Invalid recordMap for page')
   }
 
-  const blockSpaceId = block.space_id
+  const blockSpaceId = (block as any).space_id
 
   if (
     blockSpaceId &&
@@ -47,8 +47,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   const isBlogPost =
-    block.type === 'page' && block.parent_table === 'collection'
-  const title = getBlockTitle(block, recordMap) || libConfig.name
+  (block as any).type === 'page' && (block as any).parent_table === 'collection'
+  const title = getBlockTitle(block as any, recordMap) || libConfig.name
 
   const imageCoverPosition =
     (block as PageBlock).format?.page_cover_position ??
@@ -58,25 +58,29 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     : null
 
   const imageBlockUrl = mapImageUrl(
-    getPageProperty<string>('Social Image', block, recordMap) ||
-      (block as PageBlock).format?.page_cover,
-    block
+  getPageProperty<string>('Social Image', block as any, recordMap) ||
+    (block as PageBlock).format?.page_cover,
+     block as any
   )
-  const imageFallbackUrl = mapImageUrl(libConfig.defaultPageCover, block)
+  const imageFallbackUrl = mapImageUrl(libConfig.defaultPageCover, block as any)
 
-  const blockIcon = getBlockIcon(block, recordMap)
+  const blockIcon = getBlockIcon(block as any, recordMap)
   const authorImageBlockUrl = mapImageUrl(
     blockIcon && isUrl(blockIcon) ? blockIcon : null,
-    block
+    block as any
   )
-  const authorImageFallbackUrl = mapImageUrl(libConfig.defaultPageIcon, block)
+  const authorImageFallbackUrl = mapImageUrl(libConfig.defaultPageIcon, block as any)
   const [authorImage, image] = await Promise.all([
     getCompatibleImageUrl(authorImageBlockUrl, authorImageFallbackUrl),
     getCompatibleImageUrl(imageBlockUrl, imageFallbackUrl)
   ])
 
-  const author =
-    getPageProperty<string>('Author', block, recordMap) || libConfig.author
+  // const author =
+  //   getPageProperty<string>('Author', block, recordMap) || libConfig.author
+
+
+  const author = getPageProperty<string>('Author', block as any, recordMap)
+
 
   // const socialDescription =
   //   getPageProperty<string>('Description', block, recordMap) ||
@@ -87,7 +91,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   //   block,
   //   recordMap
   // )
-  const publishedTime = getPageProperty<number>('Published', block, recordMap)
+  // const publishedTime = getPageProperty<number>('Published', block, recordMap)
+  const publishedTime = getPageProperty<number>('Published', block as any, recordMap)
+
   const datePublished = publishedTime ? new Date(publishedTime) : undefined
   // const dateUpdated = lastUpdatedTime
   //   ? new Date(lastUpdatedTime)

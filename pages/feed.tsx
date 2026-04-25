@@ -44,26 +44,26 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
     const block = recordMap?.block?.[keys[0]]?.value
     if (!block) continue
 
-    const parentPage = getBlockParentPage(block, recordMap)
+    const parentPage = getBlockParentPage((block as any), recordMap)
     const isBlogPost =
-      block.type === 'page' &&
-      block.parent_table === 'collection' &&
+      (block as any).type === 'page' &&
+      (block as any).parent_table === 'collection' &&
       parentPage?.id === idToUuid(config.rootNotionPageId)
     if (!isBlogPost) {
       continue
     }
 
-    const title = getBlockTitle(block, recordMap) || config.name
+    const title = getBlockTitle((block as any), recordMap) || config.name
     const description =
-      getPageProperty<string>('Description', block, recordMap) ||
+      getPageProperty<string>('Description', (block as any), recordMap) ||
       config.description
     const url = getCanonicalPageUrl(config.site, recordMap)(pageId)
     const lastUpdatedTime = getPageProperty<number>(
       'Last Updated',
-      block,
+      (block as any),
       recordMap
     )
-    const publishedTime = getPageProperty<number>('Published', block, recordMap)
+    const publishedTime = getPageProperty<number>('Published', (block as any), recordMap)
     const date = lastUpdatedTime
       ? new Date(lastUpdatedTime)
       : publishedTime

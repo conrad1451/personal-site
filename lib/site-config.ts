@@ -2,7 +2,7 @@ import * as types from './types'
 
 export interface SiteConfig {
   rootNotionPageId: string
-  rootNotionSpaceId?: string
+  rootNotionSpaceId?: string | null
 
   name: string
   domain: string
@@ -42,5 +42,8 @@ export interface NavigationLink {
 }
 
 export const siteConfig = (config: SiteConfig): SiteConfig => {
-  return config
+  return {
+    ...config,
+    rootNotionSpaceId: config.rootNotionSpaceId ?? null
+  }
 }

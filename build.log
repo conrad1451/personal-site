@@ -1,0 +1,207 @@
+yarn run v1.22.22
+$ next build
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+  ▲ Next.js 14.2.35
+
+   Linting and checking validity of types ...
+
+ ⚠ The Next.js plugin was not detected in your ESLint configuration. See https://nextjs.org/docs/basic-features/eslint#migrating-existing-config
+   Creating an optimized production build ...
+ ⚠ /api/social-image provided runtime 'experimental-edge'. It can be updated to 'edge' instead.
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (695kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+ ✓ Compiled successfully
+   Collecting page data ...
+ ⚠ You are using an experimental edge runtime, the API might change.
+(node:12821) [DEP0128] DeprecationWarning: Invalid 'main' field in '/workspaces/personal-site/node_modules/@react-icons/all-files/package.json' of 'lib'. Please either fix that or report it to the module author
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+notion getPage 16a62417b9364b86b30676837d4f097a
+[ { params: { pageId: '16a62417b9364b86b30676837d4f097a' } } ]
+   Generating static pages (0/5) ...
+   Generating static pages (1/5) 
+   Generating static pages (2/5) 
+{
+  domain: 'https://conradhq.vercel.app/',
+  name: 'Conrad Hansen-Quartey',
+  rootNotionPageId: '16a62417b9364b86b30676837d4f097a',
+  rootNotionSpaceId: null,
+  description: 'My Personal Site'
+}
+notion page {
+  isDev: false,
+  title: 'Conrad Hansen-Quartey',
+  pageId: '16a62417b9364b86b30676837d4f097a',
+  rootNotionPageId: '16a62417b9364b86b30676837d4f097a',
+  recordMap: {
+    __version__: 3,
+    block: {
+      '16a62417-b936-4b86-b306-76837d4f097a': [Object],
+      'eafe666d-6dc3-4921-840f-407afbfc9008': [Object],
+      '57bed3e8-e920-4fe4-a991-e625fcc92f68': [Object],
+      'e6f57cf4-f710-456c-a11f-54a8c040b1e7': [Object],
+      'ec8c2743-3aa4-44cf-b230-49a6a5ae1554': [Object],
+      'f95548f8-a58c-41bd-a8e5-cd71f3bd718e': [Object],
+      '0c9158a9-4be0-4040-bd80-40cd9ed3b38a': [Object],
+      '41a9e7c8-3b0d-4ad4-b210-9d0fab01fcd7': [Object],
+      '8273b47d-9629-45dc-9fb0-7f68fdcb3a96': [Object],
+      '77e55f0a-1ec2-41a5-a862-902b6e35c804': [Object],
+      'b141b29e-8e2b-4157-ab4d-b1a048b4ef65': [Object],
+      '8a668a16-dc50-428e-9b6e-6df58f4be53c': [Object],
+      '010b29c1-57d6-4159-92ee-30276109b057': [Object],
+      '05b21a45-aabf-428e-9d2b-30a4685c6a7b': [Object],
+      '802fed9c-c27e-4dc2-af5f-17bebf9a6205': [Object],
+      'f832285a-c5bd-491d-b04f-056a161332bb': [Object],
+      '8007e707-018c-43f0-a397-9d4d933f2ae6': [Object],
+      '2ad558dc-6eb9-4546-8309-9d32f826e301': [Object],
+      '9a5e6a6d-4236-416d-900f-77ecf78b41cb': [Object],
+      '24eb7b5b-bf63-46a9-bd39-3493312420f3': [Object],
+      'd59d6d74-3c9e-409b-b907-843ea5ca0d8e': [Object],
+      'ff986037-2796-49b2-a55d-7086f8c428c4': [Object],
+      '7aab31f4-397e-4a3b-ab4c-e35ad45380d7': [Object],
+      '43bb5f83-23fb-4e7e-979f-64b9022df95c': [Object],
+      'fb969617-ec0f-49f4-9e1c-af12d2308336': [Object],
+      '49c6e0ee-50c5-46ff-b96f-a346b89858af': [Object],
+      'b541b6e0-920a-48d9-a314-13c8492aa679': [Object],
+      'e9569453-8c5d-4925-a0b3-41a30ef044be': [Object],
+      'dee37b7c-0ae1-4e5c-9c43-854283d06e8c': [Object],
+      '16950da0-a018-4136-998c-1f250074b99f': [Object],
+      '2a56e518-38be-4c6d-bca4-f790fb4855b4': [Object],
+      'ac7da47e-eb3c-40c9-90eb-c181d458d9ae': [Object],
+      '0ea002ef-16a0-4396-b355-5442d5fe04ad': [Object],
+      'e2355662-a0db-48da-a506-6c49115926e3': [Object],
+      'a9cd1ff4-d699-4fd6-b2b6-050bd53bbf8e': [Object],
+      '99c2847c-4335-498c-a6b9-34103c834474': [Object]
+    },
+    discussion: { '7e96b416-e997-4063-bf00-1ea509ba67e0': [Object] },
+    comment: { '76c93bd4-8570-4874-8a4b-eed1ac24da84': [Object] },
+    notion_user: {
+      '84ffc6bd-70de-4a11-bf08-fe0e77f9bd56': [Object],
+      '407cf500-ba8f-4749-8108-9c57b01b11fa': [Object]
+    },
+    collection: {},
+    collection_view: {},
+    collection_query: {},
+    signed_urls: {},
+    preview_images: {}
+  }
+}
+TypeError: Cannot read properties of undefined (reading 'replace')
+    at M (file:///workspaces/personal-site/node_modules/notion-utils/build/index.js:1:4896)
+    at Block (file:///workspaces/personal-site/node_modules/react-notion-x/build/index.js:2063:66)
+    at Wc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+    at Z (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:74:209)
+    at Z (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'replace')
+    at M (file:///workspaces/personal-site/node_modules/notion-utils/build/index.js:1:4896)
+    at Block (file:///workspaces/personal-site/node_modules/react-notion-x/build/index.js:2063:66)
+    at Wc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+    at Z (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:74:209)
+    at Z (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+   Generating static pages (3/5) 
+notion page {
+  isDev: false,
+  title: 'Conrad Hansen-Quartey',
+  pageId: '16a62417-b936-4b86-b306-76837d4f097a',
+  rootNotionPageId: '16a62417b9364b86b30676837d4f097a',
+  recordMap: {
+    __version__: 3,
+    block: {
+      '16a62417-b936-4b86-b306-76837d4f097a': [Object],
+      'eafe666d-6dc3-4921-840f-407afbfc9008': [Object],
+      '57bed3e8-e920-4fe4-a991-e625fcc92f68': [Object],
+      'e6f57cf4-f710-456c-a11f-54a8c040b1e7': [Object],
+      'ec8c2743-3aa4-44cf-b230-49a6a5ae1554': [Object],
+      'f95548f8-a58c-41bd-a8e5-cd71f3bd718e': [Object],
+      '0c9158a9-4be0-4040-bd80-40cd9ed3b38a': [Object],
+      '41a9e7c8-3b0d-4ad4-b210-9d0fab01fcd7': [Object],
+      '8273b47d-9629-45dc-9fb0-7f68fdcb3a96': [Object],
+      '77e55f0a-1ec2-41a5-a862-902b6e35c804': [Object],
+      'b141b29e-8e2b-4157-ab4d-b1a048b4ef65': [Object],
+      '8a668a16-dc50-428e-9b6e-6df58f4be53c': [Object],
+      '010b29c1-57d6-4159-92ee-30276109b057': [Object],
+      '05b21a45-aabf-428e-9d2b-30a4685c6a7b': [Object],
+      '802fed9c-c27e-4dc2-af5f-17bebf9a6205': [Object],
+      'f832285a-c5bd-491d-b04f-056a161332bb': [Object],
+      '8007e707-018c-43f0-a397-9d4d933f2ae6': [Object],
+      '2ad558dc-6eb9-4546-8309-9d32f826e301': [Object],
+      '9a5e6a6d-4236-416d-900f-77ecf78b41cb': [Object],
+      '24eb7b5b-bf63-46a9-bd39-3493312420f3': [Object],
+      'd59d6d74-3c9e-409b-b907-843ea5ca0d8e': [Object],
+      'ff986037-2796-49b2-a55d-7086f8c428c4': [Object],
+      '7aab31f4-397e-4a3b-ab4c-e35ad45380d7': [Object],
+      '43bb5f83-23fb-4e7e-979f-64b9022df95c': [Object],
+      'fb969617-ec0f-49f4-9e1c-af12d2308336': [Object],
+      '49c6e0ee-50c5-46ff-b96f-a346b89858af': [Object],
+      'b541b6e0-920a-48d9-a314-13c8492aa679': [Object],
+      'e9569453-8c5d-4925-a0b3-41a30ef044be': [Object],
+      'dee37b7c-0ae1-4e5c-9c43-854283d06e8c': [Object],
+      '16950da0-a018-4136-998c-1f250074b99f': [Object],
+      '2a56e518-38be-4c6d-bca4-f790fb4855b4': [Object],
+      'ac7da47e-eb3c-40c9-90eb-c181d458d9ae': [Object],
+      '0ea002ef-16a0-4396-b355-5442d5fe04ad': [Object],
+      'e2355662-a0db-48da-a506-6c49115926e3': [Object],
+      'a9cd1ff4-d699-4fd6-b2b6-050bd53bbf8e': [Object],
+      '99c2847c-4335-498c-a6b9-34103c834474': [Object]
+    },
+    discussion: { '7e96b416-e997-4063-bf00-1ea509ba67e0': [Object] },
+    comment: { '76c93bd4-8570-4874-8a4b-eed1ac24da84': [Object] },
+    notion_user: {
+      '84ffc6bd-70de-4a11-bf08-fe0e77f9bd56': [Object],
+      '407cf500-ba8f-4749-8108-9c57b01b11fa': [Object]
+    },
+    collection: {},
+    collection_view: {},
+    collection_query: {},
+    signed_urls: {},
+    preview_images: {}
+  }
+}
+TypeError: Cannot read properties of undefined (reading 'replace')
+    at M (file:///workspaces/personal-site/node_modules/notion-utils/build/index.js:1:4896)
+    at Block (file:///workspaces/personal-site/node_modules/react-notion-x/build/index.js:2063:66)
+    at Wc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+    at Z (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:74:209)
+    at Z (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+
+Error occurred prerendering page "/16a62417b9364b86b30676837d4f097a". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'replace')
+    at M (file:///workspaces/personal-site/node_modules/notion-utils/build/index.js:1:4896)
+    at Block (file:///workspaces/personal-site/node_modules/react-notion-x/build/index.js:2063:66)
+    at Wc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+    at Z (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:74:209)
+    at Z (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/workspaces/personal-site/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+ ✓ Generating static pages (5/5)
+
+> Export encountered errors on following paths:
+	/
+	/[pageId]: /16a62417b9364b86b30676837d4f097a
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

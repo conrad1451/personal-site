@@ -187,15 +187,16 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   // const isRootPage =
   //   parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
-  const isBlogPost =
-    block?.type === 'page' && block?.parent_table === 'collection'
-
+  const blockValue = (block as any)?.value ?? block
+  const isBlogPost = blockValue?.type === 'page' && blockValue?.parent_table === 'collection'
+  
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
 
   const pageAside = React.useMemo(
     () => (
-      <PageAside block={block} recordMap={recordMap} isBlogPost={isBlogPost} />
+      <PageAside block={block as any} recordMap={recordMap} isBlogPost={isBlogPost} />
+      // <PageAside block={block} recordMap={recordMap} isBlogPost={isBlogPost} />
     ),
     [block, recordMap, isBlogPost]
   )
@@ -210,7 +211,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     return <Page404 site={site} pageId={pageId} error={error} />
   }
 
-  const title = getBlockTitle(block, recordMap) || site.name
+  const title = getBlockTitle(block as any, recordMap) || site.name
 
   console.log('notion page', {
     isDev: config.isDev,
@@ -232,14 +233,14 @@ export const NotionPage: React.FC<types.PageProps> = ({
     !config.isDev && getCanonicalPageUrl(site, recordMap)(pageId)
 
   const socialImage = mapImageUrl(
-    getPageProperty<string>('Social Image', block, recordMap) ||
-      (block as PageBlock).format?.page_cover ||
-      config.defaultPageCover,
-    block
+    getPageProperty<string>('Social Image', block as any, recordMap) ||
+    (block as any as PageBlock).format?.page_cover ||
+    config.defaultPageCover,
+    block as any
   )
 
   const socialDescription =
-    getPageProperty<string>('Description', block, recordMap) ||
+    getPageProperty<string>('Description', block as any, recordMap) ||
     config.description
 
   return (
